@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUR</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
+        integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Mulish", "sans-serif"],
+                        bebas: ["Bebas Neue", "sans-serif"]
+                    }
+                },
+                screens: {
+                    'mobile': '320px',
+                    'tablet': '640px',
+                    'laptop': '1024px',
+                    'desktop': '1280px',
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <head>
+        <section class="mobile:invisible tablet:invisible laptop:visible desktop:visible">
+            <nav>
+                <div class="relative grid grid-cols-12 grid-rows-6">
+                    <div class="absolute col-start-1 col-end-3 justify-self-center mt-10 ml-16">
+                        <img src="./img/Lour_logo.png" alt="Logo">
+                    </div>
+                    <div
+                        class="absolute col-start-10 col-end-12 text-black text-sm font-extrabold justify-self-end z-50">
+                        <ul class="flex gap-16 mt-4 ">
+                            <li><a class="font-sans hover:text-slate-700 hover:duration-200" href="index.html">Home</a>
+                            </li>
+                            <li><a class="font-sans hover:text-slate-700 hover:duration-200"
+                                    href="#proyectos">Proyectos</a></li>
+                            <li><a class="font-sans whitespace-nowrap hover:text-slate-700 hover:duration-200"
+                                    href="#aboutMe">About me</a></li>
+                            <li><a class="font-sans hover:text-slate-700 hover:duration-200 "
+                                    href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="tablet:visible mobile:visible tablet:invisible laptop:invisible desktop:invisible">
+            <nav>
+                <div class="fixed text-slate-300 z-50 ">
+                    <i class="fas fa-bars absolute top-0 left-0 mt-4 ml-4 text-6xl text-black"></i>
+                </div>
+
+            </nav>
+        </section>
+    </head>
+    <main>
+        <section>
+
+            <div class="grid grid-cols-12 grid-rows-12 gap-20">
+                <!-- <div class="row-start-1  row-end-1 col-start-8 col-end-13 justify-self-end self-end -mt-40 mr-12 ">
+                    <img src="./img/inicio.png" alt="inicio" />
+                </div>
+                <div class="row-start-1 col-start-6 col-end-8 text-sm text-black self-start mr-8 ">
+                    <p class="font-sans">
+                        La moda incomoda, la moda juega con los límites y rompe con lo ya establecido,
+                        nos desafia replantearnos la conocida cotidianeidad. La moda nos hace hacer foco en aspectos
+                        del día a día, retomarlos, y de esta forma resignificarlos.
+                    </p>
+                </div> -->
+
+                <div class="row-start-1 self-center justify-self-start col-start-1 col-end-13 grid grid-cols-12">
+                    <div class="col-start-1 col-end-13">
+                        <video class="desktop:h-full desktop:w-screen mobile:min-h-full" src="./img/FashionFilm.mov" autoplay muted loop preload="auto"></video>
+                    </div>
+                </div>
+
+                <div id="proyectos" class="col-start-1 col-end-13 self-start">
+                    <div
+                        class="relative grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/power.JPG" alt="cintura2"
+                            class="col-start-1 col-end-13 object-cover mobile:w-full mobile:h-screen desktop:h-screen " />
+
+                        <a id="PODER"
+                            class="font-bebas text-6xl hover:cursor-pointer  hover:text-white hover:duration-500  absolute justify-self-center self-center">PODER</a>
+                        <div id="fadePoder"
+                            class="absolute desktop:col-start-9 desktop:col-end-12 mobile:col-start-1 mobile:self-start mobile:col-end-13 desktop:self-center justify-self-center z-50"></div>
+                    </div>
+                    <div
+                        class="mt-6 row-start-3 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/sillon.jpeg" alt="BESTIR"
+                            class="col-start-1 col-end-13 object-cover mobile:w-full mobile:h-screen desktop:h-screen " />
+                        <a id="BESTIR"
+                            class="  hover:cursor-pointer font-bebas text-6xl hover:text-white hover:duration-500 absolute justify-self-center self-center">BESTIR</a>
+                        <div id="fadeBestir"
+                            class="absolute desktop:col-start-9 desktop:col-end-12 mobile:col-start-1 mobile:self-start desktop:self-center justify-self-center z-50"></div>
+
+
+                    </div>
+                    <div
+                        class="mt-6 row-start-4 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/ce3.jpg"
+                            alt="coordenadaSur" class="col-start-1 col-end-13 object-cover mobile:w-full mobile:h-screen desktop:h-screen" />
+                        <a id="COORDERNADASUR"
+                            class=" hover:cursor-pointer font-bebas text-6xl hover:text-white hover:duration-500  absolute justify-self-center self-center">COORDENADA
+                            SUR</a>
+                        <div id="fadeCoordenadaSur"
+                            class="absolute desktop:col-start-10 desktop:col-end-13 desktop:self-center  mobile:col-start-1 mobile:self-start justify-self-center z-50"></div>
+
+                    </div>
+                </div>
+                <div class="desktop:mt-28 desktop:-mb-0 mobile:-mb-80 col-start-1 col-end-13">
+                    <div class="grid grid-cols-12 grid-rows-2 gap-8">
+                        <div class="row-start-1 desktop:row-end-4 desktop:col-start-2 desktop:col-end-6 mobile:col-start-2 mobile:col-end-12">
+                            <img class="" data-aos="fade-up" data-aos-duration="1000" src="./img/me.png" alt="me" />
+                        </div>
+                        <div class="row-start-2 desktop:col-start-8 desktop:col-end-12 desktop:mt-16 mobile:col-start-2 mobile:col-end-12">
+                            <img data-aos="fade-up" data-aos-duration="1000" src="./img/miTrabajo.png"
+                                alt="miTrabajo" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="contacto"
+                    class="w-full desktop:mt-28 mobile:row-start-4 mobile:self-end col-start-1 col-end-13 grid grid-cols-3">
+                    <div class="col-start-1 col-end-2 self-center justify-self-center">
+                        <a target="_blank" href="https://instagram.com/lour_arte.indumentaria?igshid=YmMyMTA2M2Y="><i
+                                class="fa-brands fa-instagram fa-2xl text-6xl text-black "></i></a>
+                    </div>
+                    <div class="col-start-2 col-end-3 self-end justify-self-center">
+                        <a href="mailto:lourdesmariaromero@gmail.com"><i
+                                class="fa-solid fa-envelope fa-2xl text-6xl text-black "></i></a>
+                    </div>
+                    <div class="col-start-3 self-end justify-self-center">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1O5Tdx3IYzxwUqv21KdqfCFEGAwjABNoS/view?usp=sharing"><i
+                                class="fa-solid fa-image-portrait fa-2xl text-6xl text-black"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="row-start-5 grid grid-rows-1 grid-cols-3 desktop:mt-28 mobile:mt-28">
+
+        <img src="./img/Lour_logo.png" alt="logo" width="150"  class="row-start-1 col-start-1 justify-self-start m-8 self-center" />
+        <p class="font-bebas text-5xl text-center row-start-1 col-start-2 self-center">MODA QUE INCOMODA</p>
+
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $('#PODER').mouseover(() => {
+            const proyectPoder = document.getElementById('fadePoder');
+            proyectPoder.style.opacity = '1';
+            proyectPoder.innerHTML = '<h1 data-aos="fade-left" id="fadePoderH1" class="mobile:m-6 font-bebas desktop:text-md mobile:text-2xl desktop:leading-6 mobile:leading-8 text-white font-black shadow-6xl">El cine durante el período de la Segunda Guerra Mundial, fué un refugio para la sociedad. La influencia de Holliwood trajo el estereotipo de una mujer independiente. Se retoma una estética clásica francesa y americana, utilizando sastrería típica de la década de los años 40, fusionando la elegancia elocuente de las ícono del cine, y la postguerra.</h1>'
+        })
+        $('#PODER').mouseout(() => {
+            const proyectPoder = document.getElementById('fadePoder');
+            proyectPoder.style.transition = '500ms';
+            proyectPoder.style.opacity = '0';
+            setTimeout(() => {
+                proyectPoder.innerHTML = '';
+            }, 500);
+            
+           
+        })
+        $('#BESTIR').mouseover(() => {
+            const proyectBestir = document.getElementById('fadeBestir');
+            proyectBestir.style.opacity = '1';
+            proyectBestir.innerHTML = `<h1 data-aos="fade-left" id="fadeBestirH1" class="mobile:m-6 font-bebas desktop:text-md mobile:text-2xl desktop:leading-6 mobile:leading-8 text-white font-black shadow-6xl">Bestir es la vida irracional. Es calentar la comida en la heladera y enfriarla en el microondas. Una vida donde la coherencia es incoherente, donde prendes la luz para dormir y la apagas al despertar. Una vida en contra de la lógica y a favor de lo espontáneo, donde cenas cuando te despertas y desayunas al irte a dormir. Una vida en donde exteriorizamos la libertad.</h1>`
+
+        });
+        $('#BESTIR').mouseout(() => {
+            const proyectBestir = document.getElementById('fadeBestir');
+            proyectBestir.style.transition = '500ms';
+            proyectBestir.style.opacity = '0';
+            setTimeout(() => {
+                proyectBestir.innerHTML = '';
+            }, 500);
+        });
+        $('#COORDERNADASUR').mouseover(() => {
+            const proyectCoordenadaSur = document.getElementById('fadeCoordenadaSur');
+            proyectCoordenadaSur.style.opacity = '1';
+            proyectCoordenadaSur.innerHTML = `<h1 data-aos="fade-left" id="fadeBestirH1" class=" mobile:m-6 font-bebas desktop:text-xl mobile:text-3xl desktop:leading-7 mobile:leading-8 text-white font-black shadow-6xl">Millones de expediciones salieron, pocas llegaron a destino. Millones de fragatas en alta mar partieron y se destruyeron en el camino. El hostil clima sub antártico arrasa con todo a su paso, inclusive los naufragios. A los 57 51 0 de la plataforma continental argentina, existen dos extenciones naturales llenas de vida animal y de tierra hinóspita humana, que desde tiempos inmemorables siempre fue invadida. Ambiente deseado por la vanidad de la sociedad a pesar de su locación lejana y su frígido, desolado y despojado clima extremo.</h1>`
+        });
+        $('#COORDERNADASUR').mouseout(() => {
+            const proyectCoordenadaSur = document.getElementById('fadeCoordenadaSur');
+            proyectCoordenadaSur.style.transition = '500ms';
+            proyectCoordenadaSur.style.opacity = '0';
+            setTimeout(() => {
+                proyectCoordenadaSur.innerHTML = '';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
